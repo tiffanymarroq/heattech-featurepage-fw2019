@@ -80,7 +80,7 @@ sans-serif;
   }
 
   .heattech-main-text {
-    margin: 50px 0;
+    margin: 60px 0 40px;
     p {
       font-size: 22px;
     }
@@ -113,5 +113,6 @@ sans-serif;
   @import './components/_anchors.scss';
   @import './components/_lineup.scss';
   @import './components/_section.scss';
+  @import './components/_toggleContainer.scss';
 
 }

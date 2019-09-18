@@ -1,0 +1,99 @@
+.qa_wrap {
+  padding: 56px 0 64px;
+  max-width: 650px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.qa_label {
+  padding: 28px 60px 28px 28px;
+  letter-spacing: .1em;
+}
+
+.qa_content {
+  padding: 0 80px;
+}
+
+.qa_check:checked+.qa_label+.qa_content {
+  padding: 40px 80px;
+  visibility: visible;
+}
+
+
+.qa_wrap div label::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 8px;
+    right: 24px;
+    top: 50%;
+    background: url(https://www.uniqlo.com/jp/ja/contents/heattech-special/common/img/product/arrow_down.png) left top no-repeat;
+    background-size: 14px 8px;
+}
+
+.qa_check {
+    display: none;
+}
+
+.qa_wrap .vspace_l_top {
+    border-bottom: 1px solid #dadada;
+}
+
+
+
+
+.qa_wrap {
+    padding: 18px 0 0;
+  }
+  .qa_check {
+      display: none;
+  }
+  .qa_label {
+      display: block;
+      border-top: 1px solid #dadada;
+      padding: 18px 15vw 18px 4vw;
+      font-size: 14px;
+    font-weight: bold;
+      position: relative;
+  }
+  .qa_wrap div label::before {
+      display: block;
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 8px;
+    right: 24px;
+    top: 50%;
+    background: url(https://www.uniqlo.com/jp/ja/contents/heattech-special/common/img/product/arrow_down.png) left top no-repeat;
+    background-size: 14px 8px;
+  }
+  .qa-active:before {
+      transform: rotate(-180deg);
+  }
+  .qa_content {
+      height: 0;
+      opacity: 0;
+      padding: 0 4vw;
+      transition: .5s;
+      visibility: hidden;
+  }
+  .qa_content p {
+    display: none;
+  }
+  .qa_check:checked + .qa_label + .qa_content {
+      height: auto;
+      opacity: 1;
+      padding: 24px 4vw;
+    border-top: 1px solid #f4f4f4;
+      visibility: visible;
+  }
+  .qa_check:checked + .qa_label + .qa_content p {
+    display: block;
+  }
+  .qa_content p span {
+    display: block;
+  }
+  .qa_content p span:first-child {
+    font-weight: bold;
+  }
