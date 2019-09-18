@@ -1,4 +1,4 @@
-#whatIsHeattech{
+#about-heattech{
     margin-bottom: 60px;
     .grid-2{
         display: grid;
@@ -9,6 +9,15 @@
     .heattech-image{
         width: 60%;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 70px;
+    }
+    
+}
+
+#three-types{
+    .three-type-heattech{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 15px;
     }
 }

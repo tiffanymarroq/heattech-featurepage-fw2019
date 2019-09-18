@@ -40,6 +40,9 @@ sans-serif;
     font-family: $fontFam_hel;
     color: #000;
   }
+  a,button{
+    cursor: pointer;
+  }
 
 
   button{
@@ -103,7 +106,7 @@ sans-serif;
 
   .video-container{
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 60px;
   }
 
   @import './components/_genderTabs.scss';
