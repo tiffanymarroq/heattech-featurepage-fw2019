@@ -108,13 +108,14 @@ sans-serif;
     width: 60%;
     margin: 0 auto 60px;
   }
-  
+
 
 
   .grid-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px;
+    margin-bottom: 50px;
     
   }
 
