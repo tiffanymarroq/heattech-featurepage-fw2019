@@ -18,45 +18,97 @@ sans-serif;
 
 @import './_breakpoints.scss';
 
-#heatteach-featurepage-fw2019{
+#heatteach-featurepage-fw2019 {
   position: relative;
   font-family: $fontFam_hel;
   padding-bottom: 50px;
 
-  img{
+  img {
     width: 100%;
     height: auto;
   }
-  ul{
+
+  ul {
     padding: 0;
   }
-  p,h4,li,a,button{
-  font-family: $fontFam_hel;
 
+  p,
+  h4,
+  li,
+  a,
+  button {
+    font-family: $fontFam_hel;
+    color: #000;
   }
-  li{
+
+
+  button{
+    outline: none;
+    border: none;
+  }
+
+  li {
     font-size: 20px;
   }
 
-  p{
-    font-size: 22px;
+  p,button {
+    font-size: 18px;
   }
 
-  h4{
+  h4 {
     font-size: 26px;
   }
-  .bold{
+
+  .bold {
     font-weight: 700;
   }
-  .text-center{
+  .semi-bold{
+    font-weight: 500;
+  }
+
+  .text-center {
     text-align: center;
   }
 
-  .main-title{
+  .main-title {
     margin: 40px 0;
     margin-left: 40px;
-  } 
+    text-align: left;
+  }
+
+  .heattech-main-text {
+    margin: 50px 0;
+    p {
+      font-size: 22px;
+    }
+  }
+
+
+  .cta-btn{
+    border: solid 1px #000;
+    background-color: transparent;
+    padding: 25px 40px;
+    width: 60%;
+    margin: 0 auto 60px;
+    display: block;
+    text-align: center;
+  }
+
+
+  .section-text{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 60px;
+  }
+
+  .video-container{
+    width: 60%;
+    margin: 0 auto;
+  }
+
   @import './components/_genderTabs.scss';
   @import './components/_anchors.scss';
+  @import './components/_lineup.scss';
+  @import './components/_section.scss';
 
 }

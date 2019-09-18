@@ -1,0 +1,14 @@
+.lineup-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  margin-bottom: 60px;
+
+  .lineup-container{
+    text-align: left;
+  }
+}
+
+
+

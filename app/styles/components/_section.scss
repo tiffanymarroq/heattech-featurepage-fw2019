@@ -1,0 +1,14 @@
+#whatIsHeattech{
+    margin-bottom: 60px;
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        margin-bottom: 60px;
+    }
+    .heattech-image{
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+}
