@@ -1,0 +1,62 @@
+$fontFam_uqReg: UniqloProRegular,
+'Uniqlo Pro Regular',
+'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
+
+$fontFam_uqBold: UniqloProBold,
+'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
+
+$fontFam_hel: 'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
+
+@import './_breakpoints.scss';
+
+#heatteach-featurepage-fw2019{
+  position: relative;
+  font-family: $fontFam_hel;
+  padding-bottom: 50px;
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+  ul{
+    padding: 0;
+  }
+  p,h4,li,a,button{
+  font-family: $fontFam_hel;
+
+  }
+  li{
+    font-size: 20px;
+  }
+
+  p{
+    font-size: 22px;
+  }
+
+  h4{
+    font-size: 26px;
+  }
+  .bold{
+    font-weight: 700;
+  }
+  .text-center{
+    text-align: center;
+  }
+
+  .main-title{
+    margin: 40px 0;
+    margin-left: 40px;
+  } 
+  @import './components/_genderTabs.scss';
+  @import './components/_anchors.scss';
+
+}

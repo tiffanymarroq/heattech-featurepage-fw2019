@@ -1,0 +1,76 @@
+.gender_tab_wrapper {
+    // max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    color: #1b1b1b;
+  }
+  .gender_tab {
+    margin: 0 auto;
+    border-top: 1px solid #dadada;
+  }
+  .gender_tab ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-family: uniqlo;
+    font-weight: 400;
+  }
+  .gender_tab ul:first-child {
+    margin-top: 0;
+  }
+  .gender_tab ul li {
+    height: auto;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding-left: 0;
+    // height: 60px;
+    padding: 15px 0;
+    width: 33.333%;
+    background: #f4f4f4;
+    border-bottom: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+  }
+  .gender_tab ul li:first-child {
+      padding-left: 0;
+  }
+  .gender_tab ul li:last-child {
+    border-right: none;
+  }
+  .gender_tab ul li.gender_tab_active {
+    background: #fff;
+    color: #1b1b1b;
+    border-bottom: none;
+  }
+  .gender_tab ul li a {
+    color: #ababab;
+    text-decoration: none;
+    /* line-height: 60px; */
+    display: block;
+    height: auto;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+  .gender_tab ul li a:hover,
+  .gender_tab ul li a:active,
+  .gender_tab ul li a:focus
+   {
+    text-decoration: none;
+    color: #378694;
+  }
+  .gender_tab ul li.gender_tab_active a {
+    color: #1b1b1b;
+    cursor: default;
+    border-bottom: 2px solid #378694;
+    display: inline-block;
+    width: auto;
+    padding: 2px 0;
+    line-height: 1em;
+  }
+  .gender_tab ul li a span {
+    font-size: 12px;
+    font-weight: bold;
+  }
