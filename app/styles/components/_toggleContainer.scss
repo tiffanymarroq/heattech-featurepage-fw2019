@@ -53,7 +53,7 @@
       display: block;
       border-top: 1px solid #dadada;
       padding: 18px 15vw 18px 4vw;
-      font-size: 14px;
+    //   font-size: 14px;
     font-weight: bold;
       position: relative;
   }
@@ -96,4 +96,9 @@
   }
   .qa_content p span:first-child {
     font-weight: bold;
+  }
+
+  .qa-answer{
+    padding: 18px 4vw 18px 4vw;
+
   }

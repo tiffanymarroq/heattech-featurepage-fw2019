@@ -54,7 +54,7 @@ sans-serif;
     font-size: 20px;
   }
 
-  p,button {
+  p,button , label{
     font-size: 18px;
   }
 
@@ -109,6 +109,13 @@ sans-serif;
     margin: 0 auto 60px;
   }
 
+
+  .grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    
+  }
   @import './components/_genderTabs.scss';
   @import './components/_anchors.scss';
   @import './components/_lineup.scss';
