@@ -108,6 +108,7 @@ sans-serif;
     width: 60%;
     margin: 0 auto 60px;
   }
+  
 
 
   .grid-2{
@@ -116,6 +117,11 @@ sans-serif;
     grid-column-gap: 15px;
     
   }
+
+  .hide{
+    display: none;
+  }
+
   @import './components/_genderTabs.scss';
   @import './components/_anchors.scss';
   @import './components/_lineup.scss';
