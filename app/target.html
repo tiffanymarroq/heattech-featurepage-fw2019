@@ -70,17 +70,31 @@
   }
 }
 
+#heatteach-featurepage-fw2019 p.bold {
+  font-family: UniqloProRegular, "Uniqlo Pro Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+@media all and (min-width: 768px) {
+  #heatteach-featurepage-fw2019 p.bold {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+  }
+}
+
 #heatteach-featurepage-fw2019 h4 {
   font-size: 18px;
   font-weight: 700px;
   margin: 30px 0;
   padding: 0 4%;
+  font-family: UniqloProRegular, "Uniqlo Pro Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media all and (min-width: 768px) {
   #heatteach-featurepage-fw2019 h4 {
     font-size: 26px;
     padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 }
 
@@ -112,7 +126,7 @@
 }
 
 #heatteach-featurepage-fw2019 .heattech-main-text p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media all and (min-width: 768px) {
@@ -472,7 +486,16 @@
 }
 
 #heatteach-featurepage-fw2019 .lineup-wrapper .lineup-container p {
+  font-family: UniqloProRegular, 'Uniqlo Pro Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
   padding-right: 4%;
+}
+
+@media all and (min-width: 768px) {
+  #heatteach-featurepage-fw2019 .lineup-wrapper .lineup-container p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: inherit;
+  }
 }
 
 #heatteach-featurepage-fw2019 #about-heattech {
@@ -620,7 +643,7 @@
 #heatteach-featurepage-fw2019 .qa_label {
   display: block;
   border-top: 1px solid #dadada;
-  padding: 18px 10vw 18px 2vw;
+  padding: 30px 12vw 30px 2vw;
   font-weight: bold;
   position: relative;
 }
@@ -676,11 +699,15 @@
 }
 
 #heatteach-featurepage-fw2019 .qa-answer {
-  padding: 18px 4vw 18px 2vw;
+  padding: 20px 4vw 20px 2vw;
   font-family: UniqloProRegular, 'Uniqlo Pro Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #heatteach-featurepage-fw2019 .qa-answer p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#heatteach-featurepage-fw2019 .qa-answer p.bold {
   font-family: UniqloProRegular, 'Uniqlo Pro Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -1176,6 +1203,7 @@
 
 <script>
   var height = $(window).height() / 2;
+  console.log('height', height);
   $('.qa-question label').click(function () {
     $(this).next('.qa-answer').slideToggle(500)
     $('label', this).toggleClass('qa-active')
