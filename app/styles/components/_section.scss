@@ -10,9 +10,14 @@
   }
 
   .heattech-image {
-    width: 60%;
+    margin: 0 auto 40px;
+
+    @include bp(sm){
+      width: 60%;
+      margin: 0 auto 70px;
+
+    }
     display: block;
-    margin: 0 auto 70px;
   }
 }
 
