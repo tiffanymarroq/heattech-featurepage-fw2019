@@ -20,7 +20,6 @@
   margin-bottom: 60px;
   padding-top: 50px;
 
-
   .three-types-heattech {
     @include bp(sm){
       display: grid;
@@ -48,8 +47,6 @@
         width: 40%;
         margin: 0 auto;
       }
-
-
     }
 
     .cta-type-btn {
@@ -60,10 +57,13 @@
         margin: 15px 0;
         width: calc(100% - 1px);
         border: 1px solid #000;
+      }
+
+      &:hover button{
+        color: #fff;
+        background-color: #000;
 
       }
     }
-
-
   }
 }

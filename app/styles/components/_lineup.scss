@@ -1,21 +1,19 @@
 .lineup-wrapper {
   width: 100%;
-  @include bp(sm){
+
+  @include bp(sm) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 15px;
-
   }
 
   margin-bottom: 60px;
 
-  .lineup-container{
+  .lineup-container {
     text-align: left;
-    p{
+
+    p {
       padding-right: 4%;
     }
   }
 }
-
-
-

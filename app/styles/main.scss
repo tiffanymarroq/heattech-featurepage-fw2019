@@ -42,7 +42,7 @@ sans-serif;
     font-family: $fontFam_hel;
     color: #000;
   }
-  a,button{
+  a,button, label{
     cursor: pointer;
   }
 
@@ -51,25 +51,20 @@ sans-serif;
     outline: none;
     border: none;
     background-color: transparent;
-  }
-
-  li {
     font-size: 18px;
 
     @include bp(sm){
       font-size: 20px;
-
     }
   }
 
   p,button , label{
     font-size: 16px;
-
     @include bp(sm){
       font-size: 18px;
-
     }
   }
+
   p{
     margin: 1em 0;
   }
@@ -80,13 +75,13 @@ sans-serif;
     margin: 30px 0;
     @include bp(sm){
       font-size: 26px;
-
     }
   }
 
   .bold {
     font-weight: 700;
   }
+
   .semi-bold{
     font-weight: 500;
   }
@@ -108,7 +103,6 @@ sans-serif;
     }
   }
 
-
   .cta-btn{
     border: solid 1px #000;
     background-color: transparent;
@@ -121,8 +115,14 @@ sans-serif;
       padding: 10px 4%;
 
     }
-  }
+    &:hover{
+      background-color: #000;
+    }
 
+    &:hover button{
+      color: #fff;
+    }
+  }
 
   .section-text{
     text-align: center;
@@ -133,13 +133,38 @@ sans-serif;
   .video-container{
     margin: 0 auto 40px;
     @include bp(sm){
-      width: 60%;
+      width: 700px;
+      min-width: 500px;
+      max-width: 700px;
+
       margin: 0 auto 60px;
     }
-
   }
 
-
+  .video-player{
+    width: 60%;
+    margin: 0 auto 60px;
+    position: relative;
+    &.qa{
+      width: 100%;
+    }
+    .play-icon-container{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.25);
+      cursor: pointer;
+      .play-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
 
   .grid-2{
     display: grid;
@@ -166,6 +191,22 @@ sans-serif;
       display: block;
     }
   }
+
+
+  // fancybox
+
+  .fancybox-inner{
+    height:auto !important;
+}
+.fancybox-skin{
+    width: 650px !important;
+    // top: 0; 
+    // left: 0 ;
+    // transform: translate(-50%,-50%);
+}
+.fancybox-overlay{
+    z-index: 9999;
+}
 
   @import './components/_genderTabs.scss';
   @import './components/_anchors.scss';

@@ -26,7 +26,7 @@
   color: #000;
 }
 
-#heatteach-featurepage-fw2019 a, #heatteach-featurepage-fw2019 button {
+#heatteach-featurepage-fw2019 a, #heatteach-featurepage-fw2019 button, #heatteach-featurepage-fw2019 label {
   cursor: pointer;
 }
 
@@ -34,14 +34,11 @@
   outline: none;
   border: none;
   background-color: transparent;
-}
-
-#heatteach-featurepage-fw2019 li {
   font-size: 18px;
 }
 
 @media all and (min-width: 768px) {
-  #heatteach-featurepage-fw2019 li {
+  #heatteach-featurepage-fw2019 button {
     font-size: 20px;
   }
 }
@@ -110,6 +107,14 @@
 
 #heatteach-featurepage-fw2019 .cta-btn button {
   padding: 10px 4%;
+}
+
+#heatteach-featurepage-fw2019 .cta-btn:hover {
+  background-color: #000;
+}
+
+#heatteach-featurepage-fw2019 .cta-btn:hover button {
+  color: #fff;
 }
 
 #heatteach-featurepage-fw2019 .section-text {
@@ -427,6 +432,11 @@
   border: 1px solid #000;
 }
 
+#heatteach-featurepage-fw2019 #three-types .three-types-heattech .cta-type-btn:hover button {
+  color: #fff;
+  background-color: #000;
+}
+
 #heatteach-featurepage-fw2019 #secret-of-heattech {
   font-family: UniqloProRegular, 'Uniqlo Pro Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -629,13 +639,11 @@
     <p>Thin, light, and warm, bring the heat like never before with new styles of HEATTEACH.</p>
   </div>
 
-
   <div class="lineup-wrapper">
     <div class="lineup-container">
       <img src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-w-pc_02.jpg"
         alt="Lineup Image 1">
       <p class="semi-bold">HEATTECH HERRINGBONE TURTLENECK LONG-SLEEVE T-SHIRT</p>
-      <p style="color: red">Note: Available starting early September</p>
     </div>
     <div class="lineup-container">
       <img src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-w-pc_04.jpg"
@@ -644,7 +652,7 @@
 
     </div>
     <div class="lineup-container">
-      <img src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-m-pc_06.jpg"
+      <img src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-w-pc_06.jpg"
         alt="Lineup Image 3">
       <p class="semi-bold">HEATTECH TURTLENECK LONG-SLEEVE T-SHIRT</p>
 
@@ -706,15 +714,17 @@
     <div class="three-types-heattech">
       <div class="heattech-type ">
         <div class="type-info heattech">
-          <img class="pc"
-            src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-pc-3_26.jpg"
-            alt="heattech info">
+          <a class="pc" href="/us/en/women/heattech-collection#HEATTECH">
+            <img
+              src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-pc-3_26.jpg"
+              alt="heattech info">
+          </a>
           <a class="sp" href="/us/en/women/heattech-collection/heattech">
             <img
-            src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-w-sp-09.jpg"
-            alt="heattech info" >
-          </a>  
-   
+              src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-w-sp-09.jpg"
+              alt="heattech info">
+          </a>
+
         </div>
         <a href="/us/en/women/heattech-collection#HEATTECH" class="cta-type-btn pc"><button>See all
             products</button></a>
@@ -722,14 +732,16 @@
       </div>
       <div class="heattech-type ">
         <div class="type-info heattech-extra-warm">
-          <img
-          class="pc"
-            src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-pc-3_28.jpg"
-            alt="HEATTECH Extra Warm">
-
-            <a href="/us/en/women/heattech-collection/extra-warm" class="sp">
-              <img src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-w-sp-10.jpg" alt="HEATTECH Extra Warm">
-            </a>
+          <a href="/us/en/women/heattech-collection#ExtraWarm" class="pc">
+            <img class="pc"
+              src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-pc-3_28.jpg"
+              alt="HEATTECH Extra Warm">
+          </a>
+          <a href="/us/en/women/heattech-collection/extra-warm" class="sp">
+            <img
+              src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-w-sp-10.jpg"
+              alt="HEATTECH Extra Warm">
+          </a>
         </div>
         <a href="/us/en/women/heattech-collection#ExtraWarm" class="cta-type-btn pc"><button>See all
             products</button></a>
@@ -737,13 +749,16 @@
       </div>
       <div class="heattech-type">
         <div class="type-info heattech-ultra-warm">
-          <img
-          class="pc"
-            src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-pc-3_30.jpg"
-            alt="HEATTECH Ultra Warm">
-            <a href="/us/en/women/heattech-collection/ultra-warm" class="sp">
-              <img src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-w-sp-11.jpg" alt="HEATTEACH Ultra Warm">
-            </a>
+          <a href="/us/en/women/heattech-collection#UltraWarm" class="pc">
+            <img
+              src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-pc-3_30.jpg"
+              alt="HEATTECH Ultra Warm">
+          </a>
+          <a href="/us/en/women/heattech-collection/ultra-warm" class="sp">
+            <img
+              src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-w-sp-11.jpg"
+              alt="HEATTEACH Ultra Warm">
+          </a>
         </div>
         <a href="/us/en/women/heattech-collection#UltraWarm" class="cta-type-btn pc"><button>See all
             products</button></a>
