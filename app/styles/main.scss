@@ -99,8 +99,13 @@ sans-serif;
 
   .main-title {
     margin: 40px 0;
-    margin-left: 40px;
+    margin-left: 4%;
+
     text-align: left;
+    @include bp(sm){
+      margin-left: 40px;
+
+    }
   }
 
   .heattech-main-text {
