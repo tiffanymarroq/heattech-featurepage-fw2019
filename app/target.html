@@ -26,7 +26,9 @@
   color: #000;
 }
 
-#heatteach-featurepage-fw2019 a, #heatteach-featurepage-fw2019 button, #heatteach-featurepage-fw2019 label {
+#heatteach-featurepage-fw2019 a,
+#heatteach-featurepage-fw2019 button,
+#heatteach-featurepage-fw2019 label {
   cursor: pointer;
 }
 
@@ -43,12 +45,16 @@
   }
 }
 
-#heatteach-featurepage-fw2019 p, #heatteach-featurepage-fw2019 button, #heatteach-featurepage-fw2019 label {
+#heatteach-featurepage-fw2019 p,
+#heatteach-featurepage-fw2019 button,
+#heatteach-featurepage-fw2019 label {
   font-size: 16px;
 }
 
 @media all and (min-width: 768px) {
-  #heatteach-featurepage-fw2019 p, #heatteach-featurepage-fw2019 button, #heatteach-featurepage-fw2019 label {
+  #heatteach-featurepage-fw2019 p,
+  #heatteach-featurepage-fw2019 button,
+  #heatteach-featurepage-fw2019 label {
     font-size: 18px;
   }
 }
@@ -129,9 +135,40 @@
 
 @media all and (min-width: 768px) {
   #heatteach-featurepage-fw2019 .video-container {
-    width: 60%;
+    width: 700px;
+    min-width: 500px;
+    max-width: 700px;
     margin: 0 auto 60px;
   }
+}
+
+#heatteach-featurepage-fw2019 .video-player {
+  width: 60%;
+  margin: 0 auto 60px;
+  position: relative;
+}
+
+#heatteach-featurepage-fw2019 .video-player.qa {
+  width: 100%;
+}
+
+#heatteach-featurepage-fw2019 .video-player .play-icon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+#heatteach-featurepage-fw2019 .video-player .play-icon-container .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #heatteach-featurepage-fw2019 .grid-2 {
@@ -163,6 +200,18 @@
   #heatteach-featurepage-fw2019 .pc {
     display: block;
   }
+}
+
+#heatteach-featurepage-fw2019 .fancybox-inner {
+  height: auto !important;
+}
+
+#heatteach-featurepage-fw2019 .fancybox-wrap {
+  width: 650px !important;
+}
+
+#heatteach-featurepage-fw2019 .fancybox-overlay {
+  z-index: 9999;
 }
 
 #heatteach-featurepage-fw2019 .gender_tab_wrapper {
@@ -695,12 +744,19 @@
       <h4 class="bold">How HEATTECH technology works:</h4>
     </div>
 
-    <div class='video-container'>
-      <div style="position:relative;padding-top:56.25%;">
-        <iframe src="https://www.youtube.com/embed/qwKPaOc-Rsg" frameborder="0" allowfullscreen
-          style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+
+    <div class='video-player video-1'>
+      <img src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-w-pc_21.jpg"
+        alt="Image Placeholder">
+      <div class="play-icon-container">
+        <img class="play-icon"
+          src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/play-button-white.png" alt="Play Icon">
       </div>
     </div>
+    <div class="video-container video-1-container hide" data-width="600px" >
+      <iframe src="https://www.youtube.com/embed/qwKPaOc-Rsg" frameborder="0" allowfullscreen></iframe>
+    </div>
+
 
     <a href="/us/en/women/heattech-collection" class="cta-btn"><button>See all products</button></a>
 
@@ -839,7 +895,18 @@
             </div>
             <p class="bold text-center">HEATTECH's moisture-retaining capability, explained:</p>
 
-            <div class='video-container' style="width: 100%">
+
+            <div class='video-player video-2 qa'>
+              <img
+                src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-qa-06.jpg"
+                alt="Image Placeholder">
+              <div class="play-icon-container">
+                <img class="play-icon"
+                  src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/play-button-white.png"
+                  alt="">
+              </div>
+            </div>
+            <div class='video-container video-2-container hide' style="width: 100%">
               <div style="position:relative;padding-top:56.25%;">
                 <iframe src="https://www.youtube.com/embed/C-dJJZcIWVM" frameborder="0" allowfullscreen
                   style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
@@ -856,7 +923,17 @@
             <p>We have developed a knitted fabric that moves with your body. Even when you layer up in cold weather, it
               still provides easy movement.</p>
             <p>Witness the amazing stretch of HEATTECH:</p>
-            <div class='video-container' style="width: 100%">
+            <div class='video-player video-3 qa'>
+              <img
+                src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-qa-07.jpg"
+                alt="Image Placeholder">
+              <div class="play-icon-container">
+                <img class="play-icon"
+                  src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/play-button-white.png"
+                  alt="">
+              </div>
+            </div>
+            <div class='video-container video-3-container hide' style="width: 100%">
               <div style="position:relative;padding-top:56.25%;">
                 <iframe src="https://www.youtube.com/embed/mX2T-x89kLk" frameborder="0" allowfullscreen
                   style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
@@ -926,7 +1003,18 @@
                 alt="QA Image 2">
             </div>
             <p>See just how absorbent HEATTECH is:</p>
-            <div class='video-container' style="width: 100%">
+            <div class='video-player video-4 qa'>
+              <img
+                src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-qa-13.jpg"
+                alt="Image Placeholder">
+              <div class="play-icon-container">
+                <img class="play-icon"
+                  src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/play-button-white.png"
+                  alt="">
+              </div>
+            </div>
+
+            <div class='video-container hide video-4-container' style="width: 100%">
               <div style="position:relative;padding-top:56.25%;">
                 <iframe src="https://www.youtube.com/embed/gMdthcyN6Qg" frameborder="0" allowfullscreen
                   style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
@@ -954,7 +1042,19 @@
               src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-qa-14.jpg"
               alt="QA 6 Image 1">
             <p>Check out our smooth-to-the-touch test for HEATTECH:</p>
-            <div class='video-container' style="width: 100%">
+
+            <div class='video-player video-5 qa'>
+              <img
+                src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/19fw-heattech-qa-15.jpg"
+                alt="Image Placeholder">
+              <div class="play-icon-container">
+                <img class="play-icon"
+                  src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/play-button-white.png"
+                  alt="">
+              </div>
+            </div>
+
+            <div class='video-container hide video-5-container' style="width: 100%">
               <div style="position:relative;padding-top:56.25%;">
                 <iframe src="https://www.youtube.com/embed/bkBPQIo6C78" frameborder="0" allowfullscreen
                   style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
@@ -996,9 +1096,41 @@
 
 
 <script>
-  $('.qa-question').click(function () {
-    $(this).children('.qa-answer').slideToggle(500)
+  $('.qa-question label').click(function () {
+    $(this).next('.qa-answer').slideToggle(500)
     $('label', this).toggleClass('qa-active')
+  })
+
+  $('.video-1').on('click', () => {
+    $(".video-1-container").fancybox({
+      'overlayShow': true,
+    }).trigger('click');
+  })
+
+  $('.video-2').on('click', () => {
+    $(".video-2-container").fancybox({
+      'overlayShow': true,
+    }).trigger('click');
+  })
+
+  $('.video-3').on('click', () => {
+    $(".video-3-container").fancybox({
+      'overlayShow': true,
+    }).trigger('click');
+  })
+
+
+  $('.video-4').on('click', () => {
+    $(".video-4-container").fancybox({
+      'overlayShow': true,
+    }).trigger('click');
+  })
+
+
+  $('.video-5').on('click', () => {
+    $(".video-5-container").fancybox({
+      'overlayShow': true,
+    }).trigger('click');
   })
 
 </script>

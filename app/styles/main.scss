@@ -42,38 +42,45 @@ sans-serif;
     font-family: $fontFam_hel;
     color: #000;
   }
-  a,button, label{
+
+  a,
+  button,
+  label {
     cursor: pointer;
   }
 
 
-  button{
+  button {
     outline: none;
     border: none;
     background-color: transparent;
     font-size: 18px;
 
-    @include bp(sm){
+    @include bp(sm) {
       font-size: 20px;
     }
   }
 
-  p,button , label{
+  p,
+  button,
+  label {
     font-size: 16px;
-    @include bp(sm){
+
+    @include bp(sm) {
       font-size: 18px;
     }
   }
 
-  p{
+  p {
     margin: 1em 0;
   }
 
   h4 {
     font-size: 20px;
-    font-weight: 700px ;
+    font-weight: 700px;
     margin: 30px 0;
-    @include bp(sm){
+
+    @include bp(sm) {
       font-size: 26px;
     }
   }
@@ -82,7 +89,7 @@ sans-serif;
     font-weight: 700;
   }
 
-  .semi-bold{
+  .semi-bold {
     font-weight: 500;
   }
 
@@ -98,12 +105,13 @@ sans-serif;
 
   .heattech-main-text {
     margin: 60px 0 40px;
+
     p {
       font-size: 22px;
     }
   }
 
-  .cta-btn{
+  .cta-btn {
     border: solid 1px #000;
     background-color: transparent;
     padding: 10px 4%;
@@ -111,28 +119,31 @@ sans-serif;
     margin: 0 auto 60px;
     display: block;
     text-align: center;
-    button{
+
+    button {
       padding: 10px 4%;
 
     }
-    &:hover{
+
+    &:hover {
       background-color: #000;
     }
 
-    &:hover button{
+    &:hover button {
       color: #fff;
     }
   }
 
-  .section-text{
+  .section-text {
     text-align: center;
     width: 60%;
     margin: 0 auto 60px;
   }
 
-  .video-container{
+  .video-container {
     margin: 0 auto 40px;
-    @include bp(sm){
+
+    @include bp(sm) {
       width: 700px;
       min-width: 500px;
       max-width: 700px;
@@ -141,72 +152,64 @@ sans-serif;
     }
   }
 
-  .video-player{
+  .video-player {
     width: 60%;
     margin: 0 auto 60px;
     position: relative;
-    &.qa{
+
+    &.qa {
       width: 100%;
     }
-    .play-icon-container{
+
+    .play-icon-container {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,.25);
+      background-color: rgba(0, 0, 0, .25);
       cursor: pointer;
-      .play-icon{
+
+      .play-icon {
         position: absolute;
         top: 50%;
         left: 50%;
         width: 100px;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
       }
     }
   }
 
-  .grid-2{
+  .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px;
     margin-bottom: 50px;
-    
+
   }
 
-  .hide{
+  .hide {
     display: none;
   }
 
-  .sp{
+  .sp {
     display: block;
-    @include bp(sm){
+
+    @include bp(sm) {
       display: none;
     }
   }
 
-  .pc{
+  .pc {
     display: none;
-    @include bp(sm){
+
+    @include bp(sm) {
       display: block;
     }
   }
 
 
   // fancybox
-
-  .fancybox-inner{
-    height:auto !important;
-}
-.fancybox-skin{
-    width: 650px !important;
-    // top: 0; 
-    // left: 0 ;
-    // transform: translate(-50%,-50%);
-}
-.fancybox-overlay{
-    z-index: 9999;
-}
 
   @import './components/_genderTabs.scss';
   @import './components/_anchors.scss';
