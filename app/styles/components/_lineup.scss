@@ -13,6 +13,18 @@
     text-align: left;
 
     p {
+      font-family: UniqloProRegular,
+      'Uniqlo Pro Regular',
+      'Helvetica Neue',
+      Helvetica,
+      Arial,
+      sans-serif;
+      @include bp(sm){
+        font-family: 'Helvetica Neue',
+        Helvetica,
+        Arial,
+        sans-serif;
+      }
       padding-right: 4%;
     }
   }

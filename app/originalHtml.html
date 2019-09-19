@@ -65,20 +65,26 @@
 
   <div class="lineup-wrapper">
     <div class="lineup-container">
+        <p class="semi-bold sp">HEATTECH HERRINGBONE TURTLENECK LONG-SLEEVE T-SHIRT</p>
+
       <img src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-w-pc_02.jpg"
         alt="Lineup Image 1">
-      <p class="semi-bold">HEATTECH HERRINGBONE TURTLENECK LONG-SLEEVE T-SHIRT</p>
+      <p class="semi-bold pc">HEATTECH HERRINGBONE TURTLENECK LONG-SLEEVE T-SHIRT</p>
     </div>
     <div class="lineup-container">
+        <p class="semi-bold sp">HEATTECH CREW NECK LONG-SLEEVE T-SHIRT</p>
+
       <img src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-w-pc_04.jpg"
         alt="Lineup Image 2">
-      <p class="semi-bold">HEATTECH CREW NECK LONG-SLEEVE T-SHIRT</p>
+      <p class="semi-bold pc">HEATTECH CREW NECK LONG-SLEEVE T-SHIRT</p>
 
     </div>
     <div class="lineup-container">
+        <p class="semi-bold sp">HEATTECH TURTLENECK LONG-SLEEVE T-SHIRT</p>
+
       <img src="https://image.uniqlo.com//UQ/ST3/us/imagesother/featurepages/19fw-heattech/190920-heattech-w-pc_06.jpg"
         alt="Lineup Image 3">
-      <p class="semi-bold">HEATTECH TURTLENECK LONG-SLEEVE T-SHIRT</p>
+      <p class="semi-bold pc">HEATTECH TURTLENECK LONG-SLEEVE T-SHIRT</p>
 
     </div>
   </div>
@@ -468,7 +474,7 @@
 
 
 <script>
-  
+  var height = $(window).height() / 2;
   $('.qa-question label').click(function () {
     $(this).next('.qa-answer').slideToggle(500)
     $('label', this).toggleClass('qa-active')
@@ -476,7 +482,8 @@
 
   $('.video-1').on('click', () => {
     $(".video-1-container").fancybox({
-      'overlayShow': true,
+      // 'overlayShow': true,
+       width: (16 / 9) * height,
     }).trigger('click');
   })
 

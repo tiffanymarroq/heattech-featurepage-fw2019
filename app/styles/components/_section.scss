@@ -1,6 +1,11 @@
 #about-heattech {
   padding-top: 50px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+
+  @include bp(sm){
+    margin-bottom: 60px;
+
+  }
 
   .grid-2 {
     display: grid;
@@ -23,7 +28,11 @@
 
 #three-types {
   margin-bottom: 60px;
+  padding-top: 30px;
+  @include bp(sm){
   padding-top: 50px;
+
+  }
 
   .three-types-heattech {
     @include bp(sm){

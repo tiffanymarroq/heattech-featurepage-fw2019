@@ -5,14 +5,17 @@
     Helvetica,
     Arial,
     sans-serif;
+  padding: 0 4%;
 }
 
 .qa_wrap {
   padding: 56px 0 64px;
-  @include bp(sm){
-  width: 70%;
+
+  @include bp(sm) {
+    width: 70%;
 
   }
+
   margin: 0 auto;
 }
 
@@ -120,8 +123,8 @@
 }
 
 .qa-answer {
-    padding: 18px 4vw 18px 2vw;
-  
+  padding: 18px 4vw 18px 2vw;
+
   font-family: UniqloProRegular,
     'Uniqlo Pro Regular',
     'Helvetica Neue',

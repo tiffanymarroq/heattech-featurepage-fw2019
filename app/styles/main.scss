@@ -64,7 +64,7 @@ sans-serif;
   p,
   button,
   label {
-    font-size: 16px;
+    font-size: 14px;
 
     @include bp(sm) {
       font-size: 18px;
@@ -73,15 +73,26 @@ sans-serif;
 
   p {
     margin: 1em 0;
+    padding: 0 4%;
+    @include bp(sm){
+      padding: 0;
+    }
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700px;
     margin: 30px 0;
+    padding: 0 4%;
+      font-family: $fontFam_uqReg;
+  
+   
 
     @include bp(sm) {
       font-size: 26px;
+      padding: 0;
+      font-family: $fontFam_hel;
+
     }
   }
 
@@ -99,8 +110,7 @@ sans-serif;
 
   .main-title {
     margin: 40px 0;
-    margin-left: 4%;
-
+    // margin-left: 4%;
     text-align: left;
     @include bp(sm){
       margin-left: 40px;
@@ -112,7 +122,12 @@ sans-serif;
     margin: 60px 0 40px;
 
     p {
-      font-size: 22px;
+      font-size: 18px;
+
+      @include bp(sm){
+        font-size: 22px;
+
+      }
     }
   }
 
@@ -120,10 +135,16 @@ sans-serif;
     border: solid 1px #000;
     background-color: transparent;
     padding: 10px 4%;
-    width: 60%;
-    margin: 0 auto 60px;
+    width: 80%;
+    margin: 0 auto 20px;
     display: block;
     text-align: center;
+    @include bp(sm){
+    width: 60%;
+
+      margin: 0 auto 60px;
+
+    }
 
     button {
       padding: 10px 4%;
@@ -141,18 +162,23 @@ sans-serif;
 
   .section-text {
     text-align: center;
-    width: 60%;
-    margin: 0 auto 60px;
+    margin: 0 auto 40px;
+
+    @include bp(sm){
+      width: 60%;
+      margin: 0 auto 60px;
+    }
   }
 
   .video-container {
     margin: 0 auto 40px;
+    padding: 0 4%;
 
     @include bp(sm) {
       width: 700px;
       min-width: 500px;
       max-width: 700px;
-
+      padding: 0;
       margin: 0 auto 60px;
     }
   }
