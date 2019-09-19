@@ -1,7 +1,18 @@
+#secret-of-heattech {
+  font-family: UniqloProRegular,
+    'Uniqlo Pro Regular',
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
 .qa_wrap {
   padding: 56px 0 64px;
-  max-width: 650px;
-  width: 100%;
+  @include bp(sm){
+  width: 70%;
+
+  }
   margin: 0 auto;
 }
 
@@ -54,7 +65,7 @@
 .qa_label {
   display: block;
   border-top: 1px solid #dadada;
-  padding: 18px 15vw 18px 4vw;
+  padding: 18px 8vw 18px 2vw;
   //   font-size: 14px;
   font-weight: bold;
   position: relative;
@@ -109,14 +120,30 @@
 }
 
 .qa-answer {
-  padding: 18px 4vw 18px 4vw;
+    padding: 18px 4vw 18px 2vw;
+  
+  font-family: UniqloProRegular,
+    'Uniqlo Pro Regular',
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  p {
+    font-family: UniqloProRegular,
+      'Uniqlo Pro Regular',
+      'Helvetica Neue',
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
 
   .video-container {
     margin: 40px 0 30px;
   }
 
-  p:nth-child(2){
-      margin-bottom: 50px;
+  p:nth-child(2) {
+    margin-bottom: 50px;
   }
 
 }
