@@ -150,7 +150,9 @@
   }
 
   .video-container {
-    margin: 40px 0 30px;
+    @include bp(sm){
+      margin: 40px 0 30px;
+    }
   }
 
   p:nth-child(2) {

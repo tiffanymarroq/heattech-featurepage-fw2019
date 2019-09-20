@@ -75,6 +75,8 @@ sans-serif;
   p {
     margin: 1em 0;
     padding: 0 4%;
+    line-height: 1.2;
+
 
     @include bp(sm) {
       padding: 0;
@@ -92,12 +94,43 @@ sans-serif;
     }
   }
 
+  .break-line {
+    height: 20px;
+    width: 100%;
+    background-color: #f4f4f4;
+  }
+
+  .bold-text {
+    font-weight: 700;
+
+    &h4 {
+      font-weight: 400;
+
+      @include bp(sm) {
+        font-weight: 700;
+
+      }
+    }
+
+  }
+
   h4 {
     font-size: 18px;
     font-weight: 700px;
     margin: 30px 0;
     padding: 0 4%;
     font-family: $fontFam_uqReg;
+    line-height: 1;
+
+    &.bold-text {
+      font-weight: 400;
+
+      @include bp(sm) {
+        font-weight: 700;
+      }
+
+
+    }
 
 
 
@@ -109,9 +142,7 @@ sans-serif;
     }
   }
 
-  .bold {
-    font-weight: 700;
-  }
+
 
   .semi-bold {
     font-weight: 500;
@@ -122,18 +153,32 @@ sans-serif;
   }
 
   .main-title {
-    margin: 40px 0;
+    margin: 20px 0;
     // margin-left: 4%;
     text-align: left;
 
     @include bp(sm) {
+      margin: 40px 0;
+
       margin-left: 40px;
 
     }
   }
 
   .heattech-main-text {
-    margin: 60px 0 40px;
+    width: 50%;
+    margin: 60px auto;
+
+    h4 {
+      line-height: 30px;
+
+    }
+
+    @include bp(sm) {
+      margin: 40px 0 40px;
+
+      width: auto;
+    }
 
     p {
       font-size: 16px;
@@ -176,10 +221,32 @@ sans-serif;
   }
 
   .section-text {
-    text-align: center;
     margin: 0 auto 40px;
+    text-align: center;
+
+
+    p {
+      text-align: left;
+
+      @include bp(sm) {
+        text-align: center;
+
+      }
+
+      &.bold-text {
+        font-family: $fontFam_uqReg;
+
+        @include bp(sm) {
+          font-family: $fontFam_hel;
+        }
+
+        text-align: center;
+      }
+
+    }
 
     @include bp(sm) {
+
       width: 60%;
       margin: 0 auto 60px;
     }
@@ -187,7 +254,6 @@ sans-serif;
 
   .video-container {
     margin: 0 auto 40px;
-    padding: 0 4%;
 
     @include bp(sm) {
       width: 700px;
@@ -199,8 +265,8 @@ sans-serif;
   }
 
   .video-player {
-    margin: 0 auto 30px;
     display: block;
+    margin: 0 4% 30px;
 
     @include bp(sm) {
       width: 60%;
@@ -211,6 +277,7 @@ sans-serif;
 
     &.qa {
       width: 100%;
+      margin: 0 0 60px;
     }
 
     .play-icon-container {
@@ -292,7 +359,6 @@ sans-serif;
   @import './components/_lineup.scss';
   @import './components/_section.scss';
   @import './components/_toggleContainer.scss';
-
 
 
 
